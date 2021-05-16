@@ -5,7 +5,6 @@ import tkinter as tk
 from tkinter import messagebox
 import pygame
 
-
 def Window():
     window = tk.Tk()
     window.geometry('299x399')
@@ -36,12 +35,10 @@ def Window():
     ent2.get()
     ent2.place(x=90, y=90)
     btn = tk.Button(fg="blue", text="ورود", width=10, height=3)
-
     btn['command'] = (lambda:
                       doing(ent1, ent2, options))
     btn.place(x=110, y=140)
     window.mainloop()
-
 
 def doing(ent1, ent2, options):
     username = ent1.get()
@@ -54,7 +51,6 @@ def doing(ent1, ent2, options):
     browser.find_element_by_xpath('//input[@name="password"]').send_keys(password)
     browser.find_element_by_xpath('//button[@type="submit"]').click()
     browser.find_element_by_xpath(f"//a[contains(text(), 'جلسات من')]").click()
-
     while True:
         browser.find_element_by_xpath(
             f'//html//body//div[@class="main col-12"]//div[@class="row justify-content-center"]//section[@id="session-list"]//a[@class="btn btn-info "]').click()
@@ -72,6 +68,5 @@ def doing(ent1, ent2, options):
                 continue
         except selenium.common.exceptions.NoSuchElementException:
             pass
-
 
 Window()
