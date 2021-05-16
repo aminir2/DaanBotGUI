@@ -9,7 +9,7 @@ def Window():
     window = tk.Tk()
     window.geometry('299x399')
     window.iconbitmap('icon.ico')
-    window.title("Daan Bot")
+    window.title("Daan Bot Beta")
     window.resizable(False, False)
     background = tk.PhotoImage(file="background.png")
     bg = tk.Label(window, image=background)
