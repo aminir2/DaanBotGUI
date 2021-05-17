@@ -50,6 +50,9 @@ def doing(ent1, ent2, options):
     browser.find_element_by_xpath('//input[@name="identification_number"]').send_keys(username)
     browser.find_element_by_xpath('//input[@name="password"]').send_keys(password)
     browser.find_element_by_xpath('//button[@type="submit"]').click()
+    if browser.find_element_by_xpath('//html//body[@class="modal-open"]//div[@class="main col-12"]//div[@id="myModal"]//div[@class="modal-dialog"]//div[@class="modal-content"]//div[@class="modal-footer"]//button[@class="btn btn-primary"]'):
+        browser.find_element_by_xpath(
+            '//html//body[@class="modal-open"]//div[@class="main col-12"]//div[@id="myModal"]//div[@class="modal-dialog"]//div[@class="modal-content"]//div[@class="modal-footer"]//button[@class="btn btn-primary"]').click()
     browser.find_element_by_xpath(f"//a[contains(text(), 'جلسات من')]").click()
     while True:
         browser.find_element_by_xpath(
