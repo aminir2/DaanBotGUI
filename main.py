@@ -3,7 +3,6 @@ from selenium import webdriver
 from time import sleep
 import tkinter as tk
 from tkinter import messagebox, font
-
 import pygame
 
 
