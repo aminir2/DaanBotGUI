@@ -86,5 +86,4 @@ def doing(ent0, ent1, ent2, options):
             browser.refresh()
             continue
 
-
 Window()
