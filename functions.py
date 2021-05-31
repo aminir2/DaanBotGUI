@@ -47,8 +47,7 @@ def otherclass(ent0, ent1, ent2, ent3, ent4, options):
     university = options.get()
     class_code = ent3.get()
     class_pass = ent4.get()
-    # browser = webdriver.Chrome(executable_path=path)
-    browser = webdriver.Chrome(executable_path="/Users/amin-mac/Desktop/Tkinter&selenium/chromedriver")
+    browser = webdriver.Chrome(executable_path=path)
     browser.get(f"http://{university}.daan.ir")
     browser.find_element_by_xpath(
         '//main[@class="main"]//div[@class="boxHolder"]//div[@class="loginBox"]//div[@class="row justify-content-center welcome"]//section[@class="content col-12 col-sm-12 col-md-12"]//div[@class="in"]//div[@class=" row buttonHolder"]//a[@class="btn btn-primary loginBtn col-lg-4 col-sm-12 col-xs-12"]').click()
