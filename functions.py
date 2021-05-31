@@ -38,6 +38,7 @@ def auto(ent0, ent1, ent2, options):
         except selenium.common.exceptions.NoSuchElementException:
             browser.refresh()
             continue
+        sleep(5)
 
 
 def otherclass(ent0, ent1, ent2, ent3, ent4, options):
