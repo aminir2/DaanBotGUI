@@ -1,2 +1,4 @@
 from Windows import mainPage
-mainPage()
+
+if __name__ == '__main__':
+   mainPage()
